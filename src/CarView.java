@@ -99,6 +99,7 @@ public class CarView extends JFrame {
             carC.gas(gasAmount);
         });
 
+
         // Make the panel layout more compact
         this.pack();
 

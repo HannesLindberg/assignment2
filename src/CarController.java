@@ -30,26 +30,26 @@ public class CarController {
      */
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            /*
+
             for (Car car : cars) {
-                car.move();
-                int x = (int) Math.round(car.getPosition().getX());
-                int y = (int) Math.round(car.getPosition().getY());
+                car.move(); //finns
+                int x = (int) Math.round(car.getX()); //no Method
+                int y = (int) Math.round(car.getY()); //no Method
+                //int x = (int) Math.round(car.getPosition().getX()); //no Method
+                //int y = (int) Math.round(car.getPosition().getY()); //no Method
                 frame.drawPanel.moveit(x, y);
                 // repaint() calls the paintComponent method of the panel
                 frame.drawPanel.revalidate();
                 frame.drawPanel.repaint();
             }
-             */
         }
     }
 
     void gas(int amount) {
-        /* TODO adapt to your needs
+        // TODO adapt to your needs
         double gas = ((double) amount) / 100;
         for (Car car : cars) {
             car.gas(gas);
         }
-        */
     }
 }
