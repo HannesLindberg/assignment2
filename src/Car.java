@@ -43,6 +43,14 @@ public abstract class Car implements Movable {
 
 
     // Set methods
+    public void setX(int posx){
+        x = posx;
+    }
+    public void  setY(int posy){
+        y = posy;
+    }
+
+
     public void setColor(Color clr) {
         color = clr;
     }

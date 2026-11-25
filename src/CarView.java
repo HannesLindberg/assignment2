@@ -72,9 +72,9 @@ public class CarView extends JFrame {
 
         controlPanel.setLayout(new GridLayout(2,4));
 
-        controlPanel.add(gasButton, 0);
+        controlPanel.add(gasButton, 0); //done
         controlPanel.add(turboOnButton, 1);
-        controlPanel.add(brakeButton, 2);
+        controlPanel.add(brakeButton, 2); //done
         controlPanel.add(turboOffButton, 3);
         controlPanel.add(leftButton, 4);
         controlPanel.add(rightButton, 5);
@@ -98,6 +98,29 @@ public class CarView extends JFrame {
         gasButton.addActionListener(e -> {
             carC.gas(gasAmount);
         });
+
+        brakeButton.addActionListener(e -> {
+            carC.brake(gasAmount);
+        });
+
+        leftButton.addActionListener(e -> {
+            carC.turnLeft();
+        });
+        rightButton.addActionListener(e -> {
+            carC.turnRight();
+        });
+
+        turboOffButton.addActionListener(e -> {
+            carC.saabturboOff();
+        });
+
+        turboOnButton.addActionListener(e -> {
+            carC.saabturboOn();
+        });
+
+
+
+
 
 
         // Make the panel layout more compact
