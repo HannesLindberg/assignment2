@@ -7,6 +7,7 @@ void main() {
 
     // TODO uncomment, and adapt if necessary
     cc.cars.add(new Volvo240());
+    cc.cars.add(new Saab95());
 
     Saab95 saab = new Saab95();
     saab.setY(100);

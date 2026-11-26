@@ -62,12 +62,14 @@ public class CarController {
     void turnLeft(){
         for (Car car : cars){
             car.turnLeft();
+            car.move();
         }
     }
 
     void turnRight(){
         for (Car car : cars){
             car.turnRight();
+            car.move();
         }
     }
 
