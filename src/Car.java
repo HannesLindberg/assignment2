@@ -97,7 +97,26 @@ public abstract class Car implements Movable {
             case 2: y -= currentSpeed; break; // South
             case 3: x -= currentSpeed; break; // West
         }
+        double minX = 0;
+        double maxX = 700;
+        double minY = 0;
+        double maxY = 360;
+
+        boolean hitWall = false;
+
+        if (x < minX || x > maxX){
+            x = Math.max(minX, Math.min(x, maxX));
+            hitWall = true;
+        }
+        if (y < minY || y > maxY){
+            x = Math.max(minY, Math.min(y, maxY));
+            hitWall = true;
+        }
+        if (hitWall){
+            direction = (direction +2 ) %4;
+        }
     }
+
 
     @Override
     public void turnLeft() {

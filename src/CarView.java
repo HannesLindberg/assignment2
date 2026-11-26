@@ -123,6 +123,8 @@ public class CarView extends JFrame {
 
 
 
+
+
         // Make the panel layout more compact
         this.pack();
 
