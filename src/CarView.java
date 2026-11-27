@@ -119,6 +119,17 @@ public class CarView extends JFrame {
             carC.saabturboOn();
         });
 
+        startButton.addActionListener(e -> {
+            carC.startTimer();
+        });
+
+        stopButton.addActionListener(e -> {
+            carC.stopTimer();
+        });
+
+
+
+
 
 
 

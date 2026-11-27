@@ -24,7 +24,7 @@ public class CarController {
     public void startTimer() {
         this.timer.start();
     }
-
+    public void stopTimer(){this.timer.stop();}
     /* Each step, the TimerListener moves all cars in the list and tells the
      * view to update its images. TODO Change this method to your needs.
      */
